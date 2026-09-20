@@ -5,10 +5,10 @@ Subject: [PATCH] touchpad: disable multi-finger tap-and-drag
 
 
 diff --git a/src/evdev-mt-touchpad-tap.c b/src/evdev-mt-touchpad-tap.c
-index 565f291445f9b4ae6ad8850862da565069d3b5ae..a7702174b9fcad647102c652b7b71b81db54b9a7 100644
+index 596ba9449acba980b1ad7b92a76e7f2d626ba2dd..9f034e3e6a9d7458c74dd7b994e67a46cb501fe2 100644
 --- a/src/evdev-mt-touchpad-tap.c
 +++ b/src/evdev-mt-touchpad-tap.c
-@@ -458,16 +458,11 @@ tp_tap_touch2_release_handle_event(struct tp_dispatch *tp,
+@@ -451,16 +451,11 @@ tp_tap_touch2_release_handle_event(struct tp_dispatch *tp,
  			      tp->tap.saved_press_time,
  			      2,
  			      LIBINPUT_BUTTON_STATE_PRESSED);
@@ -30,7 +30,7 @@ index 565f291445f9b4ae6ad8850862da565069d3b5ae..a7702174b9fcad647102c652b7b71b81
  		break;
  	case TAP_EVENT_MOTION:
  		tp_tap_move_to_dead(tp, t);
-@@ -674,16 +669,11 @@ tp_tap_touch3_release2_handle_event(struct tp_dispatch *tp,
+@@ -667,16 +662,11 @@ tp_tap_touch3_release2_handle_event(struct tp_dispatch *tp,
  			      tp->tap.saved_press_time,
  			      3,
  			      LIBINPUT_BUTTON_STATE_PRESSED);
@@ -52,7 +52,7 @@ index 565f291445f9b4ae6ad8850862da565069d3b5ae..a7702174b9fcad647102c652b7b71b81
  		break;
  	case TAP_EVENT_MOTION:
  		tp_tap_notify(tp,
-@@ -725,21 +715,11 @@ tp_tap_touch3_release2_handle_event(struct tp_dispatch *tp,
+@@ -718,21 +708,11 @@ tp_tap_touch3_release2_handle_event(struct tp_dispatch *tp,
  			      tp->tap.saved_press_time,
  			      2,
  			      LIBINPUT_BUTTON_STATE_PRESSED);
