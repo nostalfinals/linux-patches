@@ -14,7 +14,7 @@ SOURCE_RPM_URL = (
     "https://kojipkgs.fedoraproject.org/packages/libinput/1.31.3/1.fc44/src/"
     + SOURCE_RPM
 )
-SOURCE_RPM_SHA256 = "3393d6ab25b91445d91fc89a4628ae5b869aaeaa1dc53e48e818164719e7f73c"
+SOURCE_RPM_SHA256 = "e8b6690a66dd4f3d1f302528ee297dd67573fb708065aefd1abd5513d62c2c95"
 RELEASE_SUFFIX = ".linuxpatches1"
 
 
