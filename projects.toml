@@ -1,0 +1,4 @@
+[libinput]
+upstream_url = "https://gitlab.freedesktop.org/libinput/libinput.git"
+upstream_branch = "main"
+upstream_commit = "5cf833b572f5a33663888da321dce0ba1abd82a2"

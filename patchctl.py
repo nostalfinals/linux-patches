@@ -135,7 +135,12 @@ def rebuild(name, config):
         git(
             source_dir,
             "format-patch",
+            "--diff-algorithm=myers",
             "--zero-commit",
+            "--full-index",
+            "--no-signature",
+            "--no-stat",
+            "-N",
             "--output-directory",
             str(temp_dir),
             f"{upstream_commit}..HEAD",
